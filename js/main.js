@@ -15,12 +15,17 @@ const randonNumber = getRandomNumber(100);
 
 console.log(`El número aleatorio generado es: ${randonNumber}`);
 
-
+let attemps = 0;
 
 function checkNumber(ev) {
-    ev.preventDefault();
-    console.log('Has pulsado la tecla')
-}
+  ev.preventDefault();
 
+  attemps++;
+
+  const numberValue = parseInt(inputNumber.value);
+  console.log(
+    `La usuaria ha introducido el número ${numberValue} en el intento ${attemps}`
+  );
+}
 
 button.addEventListener('click', checkNumber);
