@@ -30,6 +30,7 @@ function checkNumber(ev) {
 
   if (randonNumber === numberValue) {
     textWinner.innerHTML = '¡Has ganado Campeona!';
+    textWinner.classList.add('textWinner');
   } else {
     if (numberValue > 100 || numberValue < 0) {
       textTrack.innerHTML = 'El número debe estar entre el 1 y el 100';

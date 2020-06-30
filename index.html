@@ -3,20 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Adivina el número</title>
   </head>
   <body>
     <main>
-      <h1>Adivina el número</h1>
-      <form action="">
-        <label for="number">Introduce aquí tu número: </label>
-        <input type="text" id="number" class="js-inputNumber" name="number"/>
-        <button type="button" class="js-button">Prueba</button>
+      <h1 class="title">Adivina el número</h1>
+      <form action="" class="form">
+        <label for="number" class="form__label"
+          >Introduce aquí tu número:
+        </label>
+        <input
+          type="text"
+          id="number"
+          class="js-inputNumber form__input"
+          name="number"
+        />
+        <button type="button" class="js-button class form__button">
+          Prueba
+        </button>
       </form>
-      <div>
-          <p class="js-textWinner">Pista: <span class="js-textTrack">Escribe el número y dale a Prueba</span></p>
-          <p>Número de intentos: <span class="js-tryNumber">0</span> </p>
+      <div class="content__text">
+        <p class="js-textWinner text">
+          Pista:
+          <span class="js-textTrack track"
+            >Escribe el número y dale a Prueba</span
+          >
+        </p>
+        <p class="text">
+          Número de intentos: <span class="js-tryNumber numberTry">0</span>
+        </p>
       </div>
     </main>
     <script src="./js/main.js"></script>
