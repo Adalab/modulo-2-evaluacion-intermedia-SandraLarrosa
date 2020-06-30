@@ -6,7 +6,11 @@ const button = document.querySelector('.js-button');
 const textTrack = document.querySelector('.js-textTrack');
 const tryNumber = document.querySelector('.js-tryNumber');
 
-console.log(inputNumber);
-console.log(button);
-console.log(textTrack);
-console.log(tryNumber);
+//Función que genera un número aleatorio
+
+function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
+}
+const randonNumber = getRandomNumber(100);
+
+console.log(`El número aleatorio generado es: ${randonNumber}`);
