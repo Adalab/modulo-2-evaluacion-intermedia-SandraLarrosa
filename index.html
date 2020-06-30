@@ -10,13 +10,13 @@
     <main>
       <h1>Adivina el número</h1>
       <form action="">
-        <label for="">Introduce aquí tu número: </label>
-        <input type="text" />
-        <button>Prueba</button>
+        <label for="number">Introduce aquí tu número: </label>
+        <input type="text" id="number" class="js-inputNumber" name="number"/>
+        <button type="button" class="js-button">Prueba</button>
       </form>
       <div>
-          <p>Pista: <span>Escribe el número y dale a Prueba</span></p>
-          <p>Número de intentos: <span>0</span> </p>
+          <p>Pista: <span class="js-textTrack">Escribe el número y dale a Prueba</span></p>
+          <p>Número de intentos: <span class="js-tryNumber">0</span> </p>
       </div>
     </main>
     <script src="./js/main.js"></script>
