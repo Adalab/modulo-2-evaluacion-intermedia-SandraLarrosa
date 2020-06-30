@@ -14,3 +14,13 @@ function getRandomNumber(max) {
 const randonNumber = getRandomNumber(100);
 
 console.log(`El número aleatorio generado es: ${randonNumber}`);
+
+
+
+function checkNumber(ev) {
+    ev.preventDefault();
+    console.log('Has pulsado la tecla')
+}
+
+
+button.addEventListener('click', checkNumber);
